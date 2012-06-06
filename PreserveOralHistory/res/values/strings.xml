@@ -1,0 +1,195 @@
+<!--
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     <string name="description_home">Welcome to Raleigh Retold</string>
+    <string name="app_name">Raleigh Retold</string>
+    <string name="next">Next</string>
+    <string name="description_map">Map</string>
+   	<string name="results">Here is the information returned from the Open Data Geo Portal</string> 
+  	<string name="orGetGPSCoords">Or</string> 
+  	<string name="dialog_message">"http://www.google.com"</string>
+    <string name="searchaddress">
+        <string name="searchaddress">
+        Raleigh Retold
+    	</string>
+    </string>
+    <string name="Welcome">
+        <![CDATA[
+      <p></p>  
+      <p>
+        Welcome to the <b>Raleigh Retold</b> Citycamp demo application. 
+        <p>
+        Embracing Raleigh&apos;s Untold Histories
+        </p>
+        <p>Capture Raleigh&apos;s history through YOUR perspective with photo, video, and audio platforms, then 
+        publish and share your stories with this interactive social app.       
+        </p>
+      <p>
+        </p>
+      ]]>
+    </string>
+ 
+    
+    
+    
+    <string name="About">
+        <![CDATA[
+      <p></p>  
+      <p>
+        Welcome to the <b>Raleigh Retold</b> CityCamp demo. 
+        
+        <p><b>Application Authors:</b></p>
+        Chad Foley, sardeenz@gmail.com<br>
+        Jason Baker, jehbaker@gmail.com<br>
+        Kayla O&apos;Daniel, kdodanie@ncsu.edu
+      <p><b>About:</b></p>
+      <p>The goal of this application is to allow users to tell the story of
+      their local neighborhood using georeferenced multimedia to create an
+      interactive map.  Maps of local media can be accessed directly through
+      the application or (eventually) through a companion website.  We also
+      hope to work with TriangleWiki as a potential platform for sharing user
+      created data.</p>
+      <p><b>Disclaimer:</b></p>
+      <p>This software should be considered pre-alpha. Most features are not
+      yet implemented. Use at your own risk. Authors are not responsible for
+      unintended results on your device.</p>
+      ]]>
+    </string>
+    <string name="categories_prompt">Choose a category</string>
+    <string-array name="categories_arrays">
+        <item>Local History</item>
+        <item>Architecture</item>
+        <item>Famous People</item>
+        <item>Environmental History</item>
+    </string-array>
+    
+    <!-- Start Hopscotch String support -->
+    
+        <string name="play_audio">Listen</string>
+    <string name="email">Send Feedback</string>  
+	<string name="aboutme">I created this app to help me get familiar with all of the bands coming to Hopscotch 2011. My Hopscotch Planner is an early alpha release worked on solely by me, so go easy as it has only been tested on my personal phone. This is *not* an official Hopscotch app. Lots of updates will come soon, stay tuned.</string> 
+   	<string name="newstuff1">-Lots of map and venue improvements</string> 
+   	<string name="newstuff2">-Add band rankings/ratings</string> 
+   	<string name="newstuff3">-More sorting/filtering options i.e. Time and Ranking etc.</string> 
+   	<string name="newstuff4">-Add feedback/email me button, other stuff, aug. reality based on mixare, improve streaming etc...</string> 
+   	<string name="newstuff5">-send any bugs, questions or recommendations to my twitter acct. but plz be nice.</string>
+   	<string name="newstuff6">-Add feedback/email me button</string>
+   	<string name="newstuff7">-Add feedback/email me button</string>
+   	<string name="thanks">Thanks goes to @indyweek and all the people who seek out and find all the great music out there.</string>
+   	<string name="contactone">\@emulsion</string>
+   	
+    <string name="description_logo">Google I/O 2010</string>
+    <string name="description_search">Search</string>
+    <string name="description_refresh">Refresh</string>
+    <string name="description_share">Share</string>
+    <string name="description_export">Export</string>
+    <string name="description_star">Star</string>
+
+    <string name="title_now_playing">Now Playing</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_sessions">Sessions</string>
+    <string name="title_starred">Starred</string>
+    <string name="title_tracks">Tracks</string>
+    <string name="title_vendors">Sandbox</string>
+    <string name="title_map">Map</string>
+    <string name="title_notes">Notes</string>
+    <string name="title_note_edit">Edit note</string>
+
+    <string name="title_session_tracks">Session tracks</string>
+    <string name="title_vendor_tracks">Sandbox tracks</string>
+
+    <string name="title_share">Share using</string>
+
+    <string name="title_search">Search</string>
+    <string name="title_search_query">Search for \'<xliff:g id="query">%1$s</xliff:g>\'</string>
+
+    <string name="btn_schedule">Tell a Story</string>
+    <string name="btn_map">Stories Nearby</string>
+    <string name="btn_sessions">Story Authors</string>
+    <string name="btn_starred">Your Profile</string>
+    <string name="btn_vendors">Share</string>
+    <string name="btn_notes">About</string>
+
+    <string name="toast_sync_error">Sync error: <xliff:g id="error">%1$s</xliff:g></string>
+
+    <string name="session_subtitle"><xliff:g id="time">%1$s</xliff:g> in <xliff:g id="room">%2$s</xliff:g></string>
+    <string name="session_moderator_status"><xliff:g id="questions">%1$s</xliff:g> questions submitted and <xliff:g id="votes">%2$s</xliff:g> votes cast.</string>
+
+    <string name="empty_sessions">No sessions found</string>
+    <string name="empty_session_detail">No session details found</string>
+    <string name="empty_vendors">No sandbox results found</string>
+    <string name="empty_notes">No notes found</string>
+    <string name="empty_search">No search results found</string>
+
+    <string name="session_summary">Summary</string>
+    <string name="session_notes">Notes</string>
+    <string name="session_moderator">Moderator</string>
+    <string name="session_interact">Interact</string>
+    <string name="session_requirements">Requirements</string>
+    <string name="session_speakers">Speakers</string>
+
+    <string name="track_summary">Summary</string>
+    <string name="track_sessions">Sessions</string>
+    <string name="track_vendors">Sandbox</string>
+
+    <string name="search_sessions">Sessions</string>
+    <string name="search_vendors">Sandbox</string>
+
+    <string name="starred_sessions">Sessions</string>
+    <string name="starred_vendors">Sandbox</string>
+
+    <string name="search_label">Google I/O</string>
+    <string name="search_hint">Search By Band Name</string>
+
+    <string name="share_template">Checking out \'<xliff:g id="title">%1$s</xliff:g>\' at Google #io2010 <xliff:g id="hashtag">%2$s</xliff:g></string>
+    <string name="share_notes">Exported notes from Google I/O 2010</string>
+
+    <string name="moderator_header">Moderator</string>
+    <string name="moderator_summary">Use Moderator to ask questions during this session, and vote up/down other questions.</string>
+    <string name="wave_header">Wave</string>
+    <string name="wave_summary">Use Wave to collaborate in real-time with others during this session.</string>
+
+    <string name="dialog_moderator_title">Google Moderator</string>
+    <string name="dialog_moderator_message">The official Google Moderator app is available in Market, would you like to install it or continue using a normal browser?</string>
+
+    <string name="dialog_moderator_web">Use Browser</string>
+    <string name="dialog_moderator_market">Visit Market</string>
+
+    <string name="dialog_wave_title">Google Wave</string>
+    <string name="dialog_wave_message">The Google Wave mobile interface is still in beta, and using a desktop or laptop is recommended for the best experience.\n\nContinue to Google Wave anyway?</string>
+
+    <string name="speaker_template"><xliff:g id="name">%1$s</xliff:g>, <xliff:g id="company">%2$s</xliff:g></string>
+
+    <string name="note_save">Save</string>
+    <string name="note_discard">Discard</string>
+
+    <string name="note_create">Create new note</string>
+    <string name="note_hint">Enter note</string>
+
+    <string name="note_discard_title">Discard note?</string>
+    <string name="note_discard_confirm">Are you sure you want to discard this note, deleting any contents?</string>
+
+    <string name="note_before"><xliff:g id="time">%1$s</xliff:g> before session</string>
+    <string name="note_into"><xliff:g id="time">%1$s</xliff:g> into session</string>
+    <string name="note_after"><xliff:g id="time">%1$s</xliff:g> after session</string>
+
+    <string name="now_playing_loading">Raleigh Retold</string>
+    <string name="now_playing_no_results">Embracing Raleigh\'s Untold Stories</string>
+    <string name="now_playing_enable_wifi">Citycamp 2012 - Raleigh, NC</string>
+    
+    <!-- Start Hopscotch String support -->
+    
+</resources>

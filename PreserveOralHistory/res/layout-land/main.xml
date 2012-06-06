@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient" >
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Welcome"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"/>    
+
+    <Button
+        android:id="@+id/btn_launch_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next" 
+        android:onClick="onNextClick"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

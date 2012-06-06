@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tellstory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Video"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Video Title:" />
+
+    <EditText
+        android:id="@+id/tellstory_nameentry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/tellstory_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Keywords:" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Video Description:" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.66"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Category:" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/categories_arrays"
+        android:prompt="@string/categories_prompt"  />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onNextClick"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:text="Take a Video" />
+
+    <Button
+        android:id="@+id/btn_launch_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onNextClick"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:text="Select Existing Video" />
+
+</LinearLayout>
