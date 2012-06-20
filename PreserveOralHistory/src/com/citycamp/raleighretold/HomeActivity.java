@@ -55,35 +55,14 @@ public class HomeActivity extends Activity implements OnSharedPreferenceChangeLi
     /** Handle "map" action. */
     public void onMapClick(View v) {
         // Launch map of conference venue
-        startActivity(new Intent(this, XYInputActivity.class));
+        startActivity(new Intent(this, DummyMapActivity.class));
     }
-
-//    /** Handle "starred" action. */
-//    public void onStarredClick(View v) {
-//        // Launch list of sessions user has starred
-//        startActivity(new Intent(this, MyScheduleActivity.class));
-//    }
-//    
-//    /** Handle "venue" action. */
-//    public void onVenueClick(View v) {
-//        // Launch list of sessions user has starred
-//        startActivity(new Intent(this, VenueListActivity.class));
-//    }
     
     /** Handle "venue" action. */
     public void onAboutClick(View v) {
         // Launch list of sessions user has starred
         startActivity(new Intent(this, CitycampAboutActivity.class));
     }
-    
-//    /** Handle "feeds" action. */
-//    public void onFeedsClick(View v) {
-//        // Launch list of sessions user has starred
-//        
-//        //startActivity(new Intent(this, FeedsActivity.class));
-//        startActivity(new Intent(this, TwitterDownloader.class));
-//        //dialog.dismiss();
-//    }
 
     /*
      * Handle date spinner selection
