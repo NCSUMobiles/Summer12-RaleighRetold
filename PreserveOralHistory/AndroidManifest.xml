@@ -13,7 +13,7 @@
         android:icon="@drawable/construction"
         android:label="@string/app_name" >
         <activity
-            android:name=".DevPlanPortalActivity"
+            android:name=".InitialActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
         </activity>
         
         <activity 
-            android:name=".CitycampAboutActivity" 				  
+            android:name=".AboutActivity" 				  
             android:label="@string/app_name"
             android:icon="@drawable/construction">
         </activity>
@@ -46,7 +46,7 @@
         </activity>
         
         <activity 
-            android:name=".DummyMapActivity" 				  
+            android:name=".StoryMapActivity" 				  
             android:label="@string/app_name"
             android:icon="@drawable/construction">
         </activity>

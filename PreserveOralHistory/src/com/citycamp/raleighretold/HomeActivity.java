@@ -55,13 +55,13 @@ public class HomeActivity extends Activity implements OnSharedPreferenceChangeLi
     /** Handle "map" action. */
     public void onMapClick(View v) {
         // Launch map of conference venue
-        startActivity(new Intent(this, DummyMapActivity.class));
+        startActivity(new Intent(this, StoryMapActivity.class));
     }
     
     /** Handle "venue" action. */
     public void onAboutClick(View v) {
         // Launch list of sessions user has starred
-        startActivity(new Intent(this, CitycampAboutActivity.class));
+        startActivity(new Intent(this, AboutActivity.class));
     }
 
     /*

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DevPlanPortalActivity extends Activity {
+public class InitialActivity extends Activity {
     /** Called when the activity is first created. */
 	
 	

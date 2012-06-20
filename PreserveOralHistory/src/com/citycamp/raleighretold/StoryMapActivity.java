@@ -13,7 +13,7 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 import com.google.android.maps.OverlayItem;
 
-public class DummyMapActivity extends MapActivity {
+public class StoryMapActivity extends MapActivity {
 	
 	
 	@Override
