@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,11 +52,18 @@ public class HomeActivity extends Activity implements OnSharedPreferenceChangeLi
         // Launch overall conference schedule
         startActivity(new Intent(this, TellStoryActivity.class));
     }
+    
+    /** Handle "share" action. */
+    public void onShareClick(View v) {
+        // Launch overall conference schedule
+    	startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://post/2710898_123018201171661?owner=2710898")));
+    }
 
     /** Handle "map" action. */
     public void onMapClick(View v) {
-        // Launch map of conference venue
-        startActivity(new Intent(this, StoryMapActivity.class));
+        // Uncomment below to use the Java-based map (depricated to allow server-side maps)
+        // startActivity(new Intent(this, StoryMapActivity.class));
+    	 startActivity(new Intent(this, WebMapActivityJSInterface.class));
     }
     
     /** Handle "venue" action. */

@@ -43,21 +43,7 @@ public class EventsActivity extends Activity{
 	public void onDownloadClick(View v) {
 		Log.i("download button was clicked","download button was clicked");
 		
-		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=Q_A2eMn224w")));
-		
-//		MediaPlayer mp = new MediaPlayer();
-//		try {
-//		
-//	    mp.setDataSource("http://www.youtube.com/watch?v=Q_A2eMn224w");
-//	    mp.prepare();
-//		} catch (Exception e) {
-//			Log.e("video error", "error: " + e.getMessage(), e);
-//		}
-//	    mp.start();
-	    
-//		Intent intent = new Intent(this, WebViewActivity.class);
-//	    startActivity(intent);
-		//"http://www.raleighnc.gov/content/PlanCurrent/Documents/DevelopmentPlansReview/PlansInReview/2011/PlansSubmittalMapsByType/SitePlan/SP-001-11.pdf"
+		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=m7ck4VEu9Tg")));
 	}
 	
 }	
