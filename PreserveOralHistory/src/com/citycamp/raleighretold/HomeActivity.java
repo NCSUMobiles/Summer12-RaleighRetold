@@ -55,8 +55,15 @@ public class HomeActivity extends Activity implements OnSharedPreferenceChangeLi
     
     /** Handle "share" action. */
     public void onShareClick(View v) {
-        // Launch overall conference schedule
-    	startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://post/2710898_123018201171661?owner=2710898")));
+        // FacebookSignonActivity.class removed to com.facebook.android for now; fix in final.
+    	// startActivity(new Intent(this, FacebookSignonActivity.class));
+    	startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/dialog/feed?app_id=251396234966327&" +
+    			"link=http://www.raleighretold.org/&" +
+    			"picture=http://www.raleighretold.org/raleighretold_logo.png&" +
+    			"name=Embracing%20Untold%20History&" +
+    			"caption=Raleigh%20Retold&" +
+    			"description=Help%20us%20tell%20Raleigh's%20untold%20stories%20with%20a%20new%20interactive%20multimedia%20application%20available%20on%20Android%20devices.&" +
+    			"redirect_uri=http://www.raleighretold.org/")));
     }
 
     /** Handle "map" action. */
@@ -72,9 +79,7 @@ public class HomeActivity extends Activity implements OnSharedPreferenceChangeLi
         startActivity(new Intent(this, AboutActivity.class));
     }
 
-    /*
-     * Handle date spinner selection
-     */
+
     public class MyOnItemSelectedListener implements OnItemSelectedListener {
 		@Override
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {

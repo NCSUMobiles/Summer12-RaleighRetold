@@ -35,7 +35,7 @@ public class AboutActivity extends Activity {
 	        //String[] displayFields = new String[] {"location", "address1", "address2", "phone"};
 	        //int[] displayViews = new int[] {R.id.location, R.id.address1, R.id.address2, R.id.phone};    
 	        
-	        String[] aboutArray = new String[] {"+chad foley, @emulsion, sardeenz@gmail.com", "Feel free to get in touch.  Tip: You can now add 'starred' bands to your calendar via your phone's Menu Option button","version 1.11"};
+	        //String[] aboutArray = new String[] {"+chad foley, @emulsion, sardeenz@gmail.com", "Feel free to get in touch.  Tip: You can now add 'starred' bands to your calendar via your phone's Menu Option button","version 1.11"};
 	        
 // Citycamp	        
 //			SeparatedListAdapter adapter = new SeparatedListAdapter(this);

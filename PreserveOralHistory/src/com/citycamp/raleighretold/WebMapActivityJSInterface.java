@@ -2,17 +2,20 @@ package com.citycamp.raleighretold;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.Criteria;
+import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class WebMapActivityJSInterface extends Activity implements LocationListener {
   private static final String MAP_URL = "http://www.raleighretold.org/mapserver/maptest.php";
+  //private static final String MAP_URL = "http://gmaps-samples.googlecode.com/svn/trunk/articles-android-webmap/simple-android-map.html";
   private WebView webView;
   private Location mostRecentLocation;
 
@@ -23,6 +26,7 @@ public class WebMapActivityJSInterface extends Activity implements LocationListe
     setContentView(R.layout.webmap);
     getLocation();
     setupWebView();
+    
     this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
   }
@@ -31,7 +35,19 @@ public class WebMapActivityJSInterface extends Activity implements LocationListe
 
     webView = (WebView) findViewById(R.id.webview2);
     webView.getSettings().setJavaScriptEnabled(true);
-    webView.setWebViewClient(new WebViewClient());
+    webView.setWebViewClient(new WebViewClient() {
+        @ Override public boolean shouldOverrideUrlLoading(WebView webview2, String url) {
+        if (url.startsWith("vnd.youtube")){
+        	startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+            return true;
+        }
+        else
+        {
+        	return false;
+        }
+        }
+        });
+
     webView.loadUrl(MAP_URL);  
 
     /** Allows JavaScript calls to access application resources **/

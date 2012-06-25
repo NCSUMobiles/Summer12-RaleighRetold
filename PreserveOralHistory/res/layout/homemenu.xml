@@ -21,150 +21,51 @@
     android:layout_height="fill_parent">
 <!--     <include layout="@layout/colorstrip"/>  -->
 
-    <LinearLayout style="@style/TitleBar" >
-
-        <View
-            style="@style/TitleBarSpring"
-            android:layout_weight="0.01" />
-
-        <!--
-            <ImageView style="@style/TitleBarSeparator" />
-        <ImageButton style="@style/TitleBarAction"
-            android:id="@+id/btn_title_refresh"
-            android:contentDescription="@string/description_refresh"
-            android:src="@drawable/ic_title_refresh"
-            android:onClick="onRefreshClick" />
-
-	    	
-        <ProgressBar style="@style/TitleBarProgressIndicator"
-            android:id="@+id/title_refresh_progress"
-            android:visibility="gone" />
-        -->
-
-        <ImageView style="@style/TitleBarSeparator" />
-
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.03"
-            android:background="#585858"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
-
-        <ImageButton
-            style="@style/TitleBarAction"
-            android:contentDescription="@string/description_search"
-            android:onClick="onSearchClick"
-            android:src="@drawable/ic_title_search" />
-    </LinearLayout>
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="@color/title_background"
         android:orientation="vertical"
         android:padding="6dip" >
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <Button android:id="@+id/home_btn_schedule"
-                style="@style/HomeButton"
-                android:onClick="onScheduleClick"
-                android:text="@string/btn_schedule"
-                android:drawableTop="@drawable/add_story"/>
-            <Button android:id="@+id/home_btn_map"
-                style="@style/HomeButton"
-                android:onClick="onMapClick"
-                android:text="@string/btn_map"
-                android:drawableTop="@drawable/map_icon"/>
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <Button android:id="@+id/home_btn_sessions"
-                style="@style/HomeButton"
-                android:onClick="onVenueClick"
-                android:text="@string/btn_sessions"
-                android:drawableTop="@drawable/authors"/>
-            <Button android:id="@+id/home_btn_starred"
-                style="@style/HomeButton"
-                android:onClick="onStarredClick"
-                android:text="@string/btn_starred"
-                android:drawableTop="@drawable/user_icon4"/>
-        </LinearLayout>
+        <Button
+            android:id="@+id/home_btn_schedule"
+            style="@style/HomeButton"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tellstory_new"
+            android:onClick="onScheduleClick" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
+        <Button
+            android:id="@+id/home_btn_map"
+            style="@style/HomeButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
-        <Button android:id="@+id/home_btn_vendors"
+            android:drawableTop="@drawable/nearbystories_new"
+            android:onClick="onMapClick" />
+
+        <Button
+            android:id="@+id/home_btn_vendors"
             style="@style/HomeButton"
-            android:onClick="onFeedsClick"
-            android:text="@string/btn_vendors"
-            android:drawableTop="@drawable/share_icon3"/> 
-		               
-                <!-- TODO: refactor home_btn_sandbox drawable name -->
-         <Button android:id="@+id/home_btn_notes"
-            style="@style/HomeButton"
-            android:onClick="onAboutClick"
-            android:text="@string/btn_notes"
-            android:drawableTop="@drawable/information"/>
-            <!-- TODO: refactor home_btn_office_hours drawable name -->
-        </LinearLayout>
+            android:layout_weight="1"
+            android:drawableTop="@drawable/share_new"
+            android:onClick="onShareClick" />
     </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/now_playing_loading"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/now_playing_height"
-        android:orientation="horizontal"
-        android:background="#333333"
-        android:gravity="center">
-<!--         <ProgressBar
-            style="?android:attr/progressBarStyleSmall"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingRight="6dip"
-            android:indeterminate="true"/>
- -->            
-        <TextView
-        	android:id="@+id/textone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"            
-            android:textSize="@dimen/text_size_small"
-            android:text="@string/now_playing_loading"
-            android:textColor="#ffffff"
-            style="@style/TextHeader"/>
- 		<TextView
- 			android:id="@+id/texttwo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_below="@+id/textone"
-            android:textSize="@dimen/text_size_small"
-            android:text="@string/now_playing_no_results"
-            android:textColor="#ffffff"
-            style="@style/TextHeader"/>
-		<TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_below="@+id/texttwo"
-            android:textSize="@dimen/text_size_small"
-            android:text="@string/now_playing_enable_wifi"
-            android:textColor="#ffffff"
-            style="@style/TextHeader"/>                            
+            android:layout_alignParentLeft="true"
+            android:background="@color/title_background"
+            android:src="@drawable/raleighretold_logo" />
             
-    </RelativeLayout>
 </LinearLayout>
