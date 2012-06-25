@@ -66,6 +66,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:background="@color/title_background"
-            android:src="@drawable/raleighretold_logo" />
+            android:src="@drawable/rr_logolong" />
             
 </LinearLayout>
