@@ -84,6 +84,7 @@ public class ClientLoginAuthorizer implements Authorizer {
         String userName = "raleighretold@gmail.com";
         String password = "raleigh_retold2012";
         String service = YOUTUBE_AUTH_TOKEN_TYPE;
+        
         String source = ctx.getString(R.string.client_id);
         String loginData = String.format(template, encode(userName),
                 encode(password), service, source);
