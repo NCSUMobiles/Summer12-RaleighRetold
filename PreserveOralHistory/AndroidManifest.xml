@@ -6,15 +6,15 @@
 
     <uses-sdk android:minSdkVersion="10" />
 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
 	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+	<uses-permission android:name="android.permission.CAMERA"/>
 	
     <application
-        android:icon="@drawable/raleighretold_logo"
+        android:icon="@drawable/construction"
         android:label="@string/app_name" >
         <activity
-            android:name=".InitialActivity"
+            android:name=".DevPlanPortalActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,70 +25,60 @@
         <activity 
             android:name=".HomeActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
         <activity 
-            android:name=".AboutActivity" 				  
+            android:name=".CitycampAboutActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
         <activity 
             android:name=".TellStoryActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
-         <activity 
-            android:name="com.facebook.android.FacebookSignonActivity" 				  
+        <activity
+            android:name=".UploadStoryActivity"
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
         <activity 
             android:name=".XYInputActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
         <activity 
-            android:name=".StoryMapActivity" 				  
+            android:name=".DummyMapActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
         <activity 
             android:name=".JsonDownloader" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>  
         
         <activity 
             android:name=".DevPlanPlacesActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         
         <activity 
             android:name=".EventsActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
-        </activity>
-                <activity 
-            android:name=".WebViewActivity" 				  
-            android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
-        </activity>
-                <activity 
-            android:name=".WebMapActivityJSInterface" 				  
-            android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>
         <activity 
             android:name="com.citycamp.raleighretold.WebViewActivity" 				  
             android:label="@string/app_name"
-            android:icon="@drawable/raleighretold_logo">
+            android:icon="@drawable/construction">
         </activity>          
           
         <uses-library android:name="com.google.android.maps" />

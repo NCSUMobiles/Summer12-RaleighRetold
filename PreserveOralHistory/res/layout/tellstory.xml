@@ -65,7 +65,7 @@
         android:prompt="@string/categories_prompt"  />
 
     <Button
-        android:id="@+id/Button02"
+        android:id="@+id/btn_record_video"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onNextClick"
@@ -74,7 +74,7 @@
         android:text="Take a Video" />
 
     <Button
-        android:id="@+id/btn_launch_main"
+        android:id="@+id/btn_gallery_select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onNextClick"

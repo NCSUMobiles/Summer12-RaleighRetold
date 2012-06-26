@@ -14,6 +14,7 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dev_key">AI39si7DXHy2TbRZSikkAwNlblCZahWhX13XY1TISohTym-CqVg4icuQzXyiaa20drx10ERyElUjlQrFUkMy7I-4_3PJcFMIGg</string>
      <string name="description_home">Welcome to Raleigh Retold</string>
     <string name="app_name">Raleigh Retold</string>
     <string name="next">Next</string>
@@ -30,12 +31,12 @@
         <![CDATA[
       <p></p>  
       <p>
-        Welcome to <b>Raleigh Retold</b>: embracing Raleigh&apos;s untold history through multimedia.
+        Welcome to the <b>Raleigh Retold</b> Citycamp demo application. 
+        <p>
+        Embracing Raleigh&apos;s Untold Histories
         </p>
-        <p>With this interactive application, you can capture Raleigh&apos;s history through YOUR perspective with your phone&apos;s video camera,
-         then publish and share your stories with this interactive social app.  Support for additional multimedia inputs, including audio, text,
-         and still image photography are coming soon. This app should be considered a public alpha test - many features are not yet completed,
-         but we hope that they can be considered coming soon.    
+        <p>Capture Raleigh&apos;s history through YOUR perspective with photo, video, and audio platforms, then 
+        publish and share your stories with this interactive social app.       
         </p>
       <p>
         </p>
@@ -54,8 +55,7 @@
         <p><b>Application Authors:</b></p>
         Chad Foley, sardeenz@gmail.com<br>
         Jason Baker, jehbaker@gmail.com<br>
-        Kayla O&apos;Daniel, kdodanie@ncsu.edu<br>
-        Will Dobbins, will.dobbins@gmail.com
+        Kayla O&apos;Daniel, kdodanie@ncsu.edu
       <p><b>About:</b></p>
       <p>The goal of this application is to allow users to tell the story of
       their local neighborhood using georeferenced multimedia to create an
@@ -190,7 +190,7 @@
     <string name="now_playing_loading">Raleigh Retold</string>
     <string name="now_playing_no_results">Embracing Raleigh\'s Untold Stories</string>
     <string name="now_playing_enable_wifi">Citycamp 2012 - Raleigh, NC</string>
-    
+    <string name="client_id">RaleighRetold</string>
     <!-- Start Hopscotch String support -->
     
 </resources>
